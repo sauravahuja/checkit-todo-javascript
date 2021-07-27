@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.nav-wrapper{
+    background: #1d3557;
+    padding: 20px 0 20px 100px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-wrapper h1{
+    font-size: 28px;
+}
+.nav-wrapper .btn-container{
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 100px;
+    border: solid 1px transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.nav-wrapper .btn-container:hover{
+    background:transparent;
+    border: solid 1px #fff;
+}
+.nav-wrapper .btn-container:hover i,
+.nav-wrapper .btn-container:hover a{
+    color: #fff;
+}
+.nav-wrapper .btn-container i{
+    color: #1d3557;
+    margin-right: 10px;
+}
+.nav-wrapper a{
+    text-decoration: none;
+}
+.container{
+    padding: 50px 200px;
+    height: 100%;
+}
+.form-wrapper{
+    background: #d8e5e6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-wrapper input[type=text]{
+    width: 88%;
+    padding: 10px;
+    margin: 10px 0;
+    border: #1d3557 solid 2px;
+    border-radius: 5px;
+    background: transparent;
+    color: #1d3557;
+}
+.form-wrapper input[type=button]{
+    padding: 10px;
+    margin: 10px 10px;
+    border: transparent solid 2px;
+    background: #1d3557;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.form-wrapper input[type=button]:hover{
+    border: #1d3557 solid 2px;
+    background: transparent;
+    color: #1d3557;
+}
+.form-wrapper ::placeholder{
+    color: #1d3557;
+}
+input:focus-visible {
+    border: unset;
+}
+
+.task{
+    background: #d8e5e6;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.green-btn{
+    background: rgb(98, 145, 5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    border: solid 1px transparent;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.green-btn:hover{
+    border: solid 1px rgb(98, 145, 5);
+    background: transparent;
+    color: rgb(98, 145, 5);
+}
+.red-btn{
+    background: rgb(214, 14, 14);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    border: solid 1px transparent;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.red-btn:hover{
+    border: solid 1px rgb(214, 14, 14);
+    background: transparent;
+    color: rgb(214, 14, 14);
+}

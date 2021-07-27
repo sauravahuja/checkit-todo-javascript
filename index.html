@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckIt - To Do</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section id="todo-entry">
+        <div class="nav-wrapper">
+            <h1>CheckIt - To Do Tracker</h1>
+            <div class="btn-container">
+                <i class="fa fa-gitlab" aria-hidden="true"></i><a href="#" class="btn-primary">Check on Gitlab</a>
+            </div>
+        </div>
+    </section>
+    <section id="todo-view">
+        <div class="container">
+            <div class="form-wrapper">
+                <form method="">
+                    <label for="task">Add a New Task</label><br>
+                    <input type="text" id="taskName" name="Task Name" placeholder="Enter Your Task">
+                    <input type="button" value="Add To List" id="addTask" class="submitTask">
+                </form>
+            </div>
+            <br>
+            <h2>Task To Be Completed</h2>
+            <hr>
+            <div class="list-wrapper">
+                <ul id="task-container">
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
