@@ -17,7 +17,7 @@ function addTask(event) {
         //We have some task to add
 
         //Creating New Li
-        let taskLi = createNewElement("li");
+        var taskLi = createNewElement("li");
         taskLi.classList.add("task");
         taskLi.textContent = taskName;
 
@@ -31,7 +31,8 @@ function addTask(event) {
         //incrementing complete count 
         completeCount++;
         greenBtn.innerHTML = `<i class="fa fa-check"></i>&nbsp;Completed`;
-    
+        greenBtn.addEventListener("click", completedTask);
+
         console.log(greenBtn);
 
         //creating Red Btn
@@ -40,7 +41,8 @@ function addTask(event) {
         //incrementing complete count 
         deleteCount++;
         redBtn.innerHTML = `<i class="fa fa-times"></i>&nbsp;Delete`;
-       
+        redBtn.addEventListener("click", deleteTask);
+
         console.log(redBtn);
 
         //Adding Green and Red Btn to the Action Button
@@ -67,6 +69,20 @@ function createNewElement(elementName) {
     return document.createElement(elementName);
 }
 
-function createNewTask() {
+function completedTask(event) {
+    let completedClassName = event.target.classList[1];
+    let completedTask = document.querySelector("."+completedClassName);
+    let parentActionBtn = completedTask.parentElement;
+    let parentLi = parentActionBtn.parentElement;
 
+    parentLi.style.opacity = "0.4";
+}
+
+function deleteTask(event) {
+    let toDeleteClassName = event.target.classList[1];
+    let toDeleteTask = document.querySelector("."+toDeleteClassName);
+    let parentActionBtn = toDeleteTask.parentElement;
+    let parentLi = parentActionBtn.parentElement;
+
+    console.log(parentLi.remove());
 }
